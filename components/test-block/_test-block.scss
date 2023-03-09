@@ -1,19 +1,19 @@
 .intro {
-  background-color: red;
+  background-color: green;
   transition: background-color 2s;
   position: relative;
   top: 0;
   p {
     color: blue;
     span {
-      color: white;
+      color: green;
     }
   }
   &::after {
     content: "hello?";
   }
   &.open {
-    background-color: blue !important;
+    background-color: orange !important;
     top: -20px;
     transition: background-color 2s top 2s;
   }

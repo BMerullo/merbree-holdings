@@ -25,6 +25,8 @@ get_header();
 		?>
 	<?php Components\View::render('intro','intro'); ?>
 
+	<?php Components\View::render('test-block','test-block'); ?>
+
 
 	<?php endwhile;
 
