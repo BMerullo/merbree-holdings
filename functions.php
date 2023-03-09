@@ -26,3 +26,18 @@ Setup\Helpers::init();
 Setup\Shortcodes::init();
 
 Setup\Widgets\RelatedPosts::register();
+
+//REMOVE GUTENBERG
+add_filter( 'use_block_editor_for_post', '__return_false' );
+
+// DISABLE COMMENTS
+
+function df_disable_comments_post_types_support() {
+   $post_types = get_post_types();
+   foreach ($post_types as $post_type) {
+      if(post_type_supports($post_type, 'comments')) {
+         remove_post_type_support($post_type, 'comments');
+         remove_post_type_support($post_type, 'trackbacks');
+      }
+   }
+}

@@ -1,0 +1,20 @@
+.intro {
+  background-color: red;
+  transition: background-color 0.5s;
+  position: relative;
+  top: 0;
+  p {
+    color: blue;
+    span {
+      color: white;
+    }
+  }
+  &::after {
+    content: "hello?";
+  }
+  &.open {
+    background-color: blue !important;
+    top: -20px;
+    transition: background-color 0.5s top 2s;
+  }
+}

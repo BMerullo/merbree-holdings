@@ -23,7 +23,8 @@ get_header();
 		
 
 		?>
-		<h1>HELLO!?</h1>
+	<?php Components\View::render('intro','intro'); ?>
+
 
 	<?php endwhile;
 

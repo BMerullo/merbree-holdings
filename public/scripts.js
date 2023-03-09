@@ -1,17 +1,17 @@
 $(window).load(function () {
   // Only animate elems above the fold. Everything else animate on scroll
-  $('.anim-up:not(.anim-no-load), .anim-left:not(.anim-no-load), .anim-right:not(.anim-no-load)').addClass('anim-complete');
+  $(".anim-up:not(.anim-no-load), .anim-left:not(.anim-no-load), .anim-right:not(.anim-no-load)").addClass("anim-complete");
 });
-$(window).on('scroll', function () {
-  $('.anim-no-load').each(function (i, el) {
+$(window).on("scroll", function () {
+  $(".anim-no-load").each(function (i, el) {
     var el = $(el);
 
     if (el.visible(true)) {
-      el.addClass('anim-complete');
+      el.addClass("anim-complete");
     }
   });
 });
-$(window).on('resize', function () {});
+$(window).on("resize", function () {});
 
 $.fn.visible = function (partial) {
   var $t = $(this),
@@ -26,6 +26,9 @@ $.fn.visible = function (partial) {
   return compareBottom <= viewBottom && compareTop >= viewTop;
 };
 
+$(".intro").click(function () {
+  $(this).toggleClass("open");
+});
 $(document).on('ready', function () {
   $('#mobile-menu').on('click', function () {
     $(this).toggleClass('open');

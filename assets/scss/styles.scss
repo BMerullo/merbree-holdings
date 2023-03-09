@@ -12,39 +12,44 @@
 */
 @import "node_modules/bootstrap/scss/bootstrap";
 
-
 /**
  * Wordpress Core
  */
-@import 'common/wordpress-core';
+@import "common/wordpress-core";
 
 /**
  * Slick Slider
  */
-@import 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css';
+@import "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css";
 
 /**
  * Typography
  */
-@import '~@fortawesome/fontawesome-free/css/all.min.css';
-@import 'common/typography';
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "common/typography";
 
 /**
  * Global
  */
-@import 'common/global';
+@import "common/global";
 
 /**
  * Animations
  */
- @import 'common/animations';
+@import "common/animations";
 
 /**
  * Functions
  */
-@import 'common/functions';
+@import "common/functions";
 
 /***
 * Partials
 ***/
-@import 'partials/buttons';
+@import "partials/buttons";
+
+/***
+* components
+***/
+
+@import "components/intro/intro";

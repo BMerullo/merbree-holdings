@@ -13601,5 +13601,34 @@ ol li {
   background: #eee;
 }
 
+/***
+* components
+***/
+
+.intro {
+  background-color: red;
+  transition: background-color 0.5s;
+  position: relative;
+  top: 0;
+}
+
+.intro p {
+  color: blue;
+}
+
+.intro p span {
+  color: white;
+}
+
+.intro::after {
+  content: "hello?";
+}
+
+.intro.open {
+  background-color: blue !important;
+  top: -20px;
+  transition: background-color 0.5s top 0.5s;
+}
+
 
 /*# sourceMappingURL=styles.css.map*/
