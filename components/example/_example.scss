@@ -1,19 +1,19 @@
-.test-block {
-  background-color: green;
+.intro {
+  background-color: red;
   transition: background-color 2s;
   position: relative;
   top: 0;
   p {
-    color: blue;
+    color: green;
     span {
-      color: green;
+      color: white;
     }
   }
   &::after {
     content: "hello?";
   }
   &.open {
-    background-color: orange !important;
+    background-color: red !important;
     top: -20px;
     transition: background-color 2s top 2s;
   }

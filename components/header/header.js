@@ -1,36 +1,25 @@
+$(document).on("ready", function() {
+  $("#mobile-menu").on("click", function() {
+    $(this).toggleClass("open");
 
-  $(document).on('ready',function(){
-
-      $('#mobile-menu').on('click',function(){
-          $(this).toggleClass('open');
-
-          $('.mobile-menu').fadeToggle();
-          $('.utility-menu').fadeToggle();
-      });
-
+    $(".mobile-menu").fadeToggle();
+    $(".utility-menu").fadeToggle();
   });
+});
 
+$(window).load(function() {});
 
-  $(window).load(function(){
+$(window).resize(function() {});
 
+/**
+ * Optional Pinned Header
+ */
+$(window).on("scroll", function(event) {
+  var scroll = $(window).scrollTop();
 
-  });
-
-
-  $(window).resize(function(){
-
-
-  });
-
-  /**
-   * Optional Pinned Header
-   */
-  $(window).on('scroll',function (event) {
-      var scroll = $(window).scrollTop();
-
-      if(scroll > 84){
-          $('header').addClass('scroll');
-      } else {
-          $('header').removeClass('scroll');
-      }
-  });
+  if (scroll > 84) {
+    $("header").addClass("scroll");
+  } else {
+    $("header").removeClass("scroll");
+  }
+});

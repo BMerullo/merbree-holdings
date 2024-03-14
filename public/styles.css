@@ -13606,14 +13606,14 @@ ol li {
 ***/
 
 .intro {
-  background-color: red;
-  transition: background-color 0.5s;
+  background-color: blue;
+  transition: background-color 2s;
   position: relative;
   top: 0;
 }
 
 .intro p {
-  color: blue;
+  color: green;
 }
 
 .intro p span {
@@ -13627,7 +13627,7 @@ ol li {
 .intro.open {
   background-color: blue !important;
   top: -20px;
-  transition: background-color 0.5s top 0.5s;
+  transition: background-color 2s top 2s;
 }
 
 
