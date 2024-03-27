@@ -49,12 +49,35 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_65f26ace5587a": {
-                    "key": "layout_65f26ace5587a",
-                    "name": "",
-                    "label": "",
+                "layout_65fb8ff28b1fd": {
+                    "key": "layout_65fb8ff28b1fd",
+                    "name": "hero_slider",
+                    "label": "Hero Slider",
                     "display": "block",
-                    "sub_fields": [],
+                    "sub_fields": [
+                        {
+                            "key": "field_65fb90078b200",
+                            "label": "Hero Slider",
+                            "name": "hero_slider",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_65fb8b9c9e414"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
                     "min": "",
                     "max": ""
                 }
@@ -82,5 +105,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1710386027
+    "modified": 1710985263
 }

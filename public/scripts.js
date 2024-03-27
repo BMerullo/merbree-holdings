@@ -28,6 +28,18 @@ $.fn.visible = function (partial) {
 
 $(".intro").click(function () {
   $(this).toggleClass("open");
+}); // SLIDER
+
+jQuery(document).ready(function ($) {
+  $(".slider").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    arrows: true
+  });
 });
 $(document).on("ready", function () {
   $("#mobile-menu").on("click", function () {

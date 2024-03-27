@@ -7,20 +7,20 @@
 				wp_nav_menu( array(
 					'theme_location' 	=> 'utility',
 					'menu_class'     	=> 'utility-menu'
-				 ) );
+				) );
 			?>
 
 		</nav>
 
 	<?php endif; ?>
 
-	<div class="container-fluid">
+	<div >
 		<div class="row">
 			<div class="col-12 clearfix">
 				
 				<div class="branding">
 
-					<h1 class="title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logo" src="http://merbree-holdings.local/wp-content/uploads/2024/03/MerbreeLogo_Black.jpeg" alt="logo"></a></h1>
 
 				</div>
 

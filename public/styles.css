@@ -13605,29 +13605,257 @@ ol li {
 * components
 ***/
 
-.intro {
-  background-color: blue;
-  transition: background-color 2s;
-  position: relative;
+.utility-desktop {
+  display: none;
+}
+
+.utility-desktop ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+}
+
+.utility-desktop ul li {
+  display: inline;
+}
+
+.utility-desktop ul li:before {
+  display: none;
+}
+
+.utility-desktop ul li a {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  transition: padding 0.3s;
+}
+
+header {
+  padding: 10px 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 20px 100px;
+  }
+}
+
+.branding {
+  float: left;
+}
+
+.branding h1 {
+  margin: 0;
+}
+
+.nav-mobile {
+  float: right;
+}
+
+@media (min-width: 992px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 97;
 }
 
-.intro p {
-  color: green;
+.mobile-menu > div {
+  max-width: 400px;
+  max-height: 80%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.intro p span {
-  color: white;
+.mobile-menu > div ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
 }
 
-.intro::after {
-  content: "hello?";
+.mobile-menu > div ul li {
+  line-height: 1.8;
+  padding: 0 30px 0 10px;
 }
 
-.intro.open {
-  background-color: blue !important;
-  top: -20px;
-  transition: background-color 2s top 2s;
+.mobile-menu > div ul li:before {
+  display: none;
+}
+
+.mobile-menu > div ul li a {
+  display: block;
+  color: #fff;
+  font-size: 22px;
+  transition: padding 0.3s;
+  margin-top: 40px;
+}
+
+.mobile-menu > div ul.sub-menu {
+  display: none;
+}
+
+#mobile-menu {
+  margin-top: 0;
+  width: 30px;
+  height: 18px;
+  position: relative;
+  padding: 17px 0;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 99;
+}
+
+#mobile-menu span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: teal;
+  border-radius: 0;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+#mobile-menu span:nth-child(1) {
+  top: 8px;
+}
+
+#mobile-menu span:nth-child(2),
+#mobile-menu span:nth-child(3) {
+  top: 16px;
+}
+
+#mobile-menu span:nth-child(4) {
+  top: 24px;
+}
+
+#mobile-menu.open span {
+  background: #fff;
+}
+
+#mobile-menu.open span:nth-child(1) {
+  top: 8px;
+  width: 0%;
+  left: 50%;
+}
+
+#mobile-menu.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+#mobile-menu.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+#mobile-menu.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .nav-desktop {
+    display: block;
+    float: right;
+  }
+}
+
+.nav-desktop ul {
+  list-style: none;
+  margin: 12px 0px 0;
+}
+
+.nav-desktop ul li {
+  display: inline;
+}
+
+.nav-desktop ul li:before {
+  display: none;
+}
+
+.nav-desktop ul li a {
+  display: inline-block;
+  margin-left: 20px;
+  color: black;
+  transition: padding 0.3s;
+}
+
+.nav-desktop .sub-menu {
+  display: none;
+}
+
+.logo {
+  height: 50px;
+}
+
+footer {
+  border-top: 1px solid #eeeeee;
+  padding: 20px 20px 10px 20px;
+}
+
+@media (min-width: 992px) {
+  footer {
+    padding: 30px 100px;
+  }
+}
+
+footer a {
+  color: #999;
+}
+
+footer .footer-logo {
+  margin: auto;
+  height: 50px;
+}
+
+@media (min-width: 992px) {
+  footer .footer-logo {
+    margin: 0;
+  }
+}
+
+footer .footer-nav {
+  color: #777;
+}
+
+footer ul {
+  list-style: none;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+footer ul li {
+  color: #999;
+  display: inline;
+  padding: 0 10px;
+}
+
+footer ul li:before {
+  display: none;
+}
+
+footer .legal {
+  margin-top: 20px;
+  margin: auto;
+  text-align: center;
 }
 
 

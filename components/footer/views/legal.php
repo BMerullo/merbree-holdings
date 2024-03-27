@@ -1,8 +1,12 @@
-<div class="legal">
+<div class="legal anim-up">
 	<?php
-		wp_nav_menu( array(
-			'theme_location' 	=> 'legal',
-			'menu_class'     	=> 'legal-menu'
-		 ) );
-	?>	
+$currentYear = date('Y');
+
+?>
+	
+	<p >Copyright <?php echo $currentYear;?> © MerbreeHolidngs </p>
+
+
+	
+
 </div>
