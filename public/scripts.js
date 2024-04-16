@@ -36,9 +36,10 @@ jQuery(document).ready(function ($) {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
-    dots: true,
-    arrows: true
+    fade: true,
+    prevArrow: false,
+    nextArrow: false,
+    autoplaySpeed: 6000
   });
 });
 $(document).on("ready", function () {

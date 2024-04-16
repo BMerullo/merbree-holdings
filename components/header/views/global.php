@@ -20,7 +20,7 @@
 				
 				<div class="branding">
 
-					<h1 class="title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logo" src="http://merbree-holdings.local/wp-content/uploads/2024/03/MerbreeLogo_Black.jpeg" alt="logo"></a></h1>
+					<h1 class="title logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logo" src="http://merbree-holdings.local/wp-content/uploads/2024/04/merbreelogo-transparent.png" alt="logo"></a></h1>
 
 				</div>
 
