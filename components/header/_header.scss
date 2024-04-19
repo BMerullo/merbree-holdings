@@ -1,6 +1,9 @@
 .utility-desktop {
   display: none;
-
+  @media (min-width: $lg-width) {
+    display: block;
+    background: rgba($brand-primary, 0.95);
+  }
   ul {
     list-style: none;
     float: right;
@@ -15,21 +18,31 @@
         padding: 10px;
         color: #fff;
         transition: padding 0.3s;
+        @media (min-width: $lg-width) {
+          font-size: 14px;
+        }
+      }
+      .current-menu-item {
+        color: $brand-primary;
       }
     }
   }
 }
 
 header {
-  position: absolute;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(20px);
-  padding: 10px 20px;
-  // border-bottom: 1px solid $gray;
-  width: 100%;
+  // position: fixed;
   @media (min-width: $lg-width) {
-    padding: 20px 100px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(26, 25, 25, 0.8);
+    backdrop-filter: blur(15px);
+  }
+  width: 100%;
+  padding: 15px;
+
+  background-color: #1a1919;
+  @media (min-width: $lg-width) {
+    padding: 15px 100px;
   }
 }
 
@@ -55,7 +68,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(black, 0.95);
+  background: rgba(#343a40, 0.95);
   z-index: 97;
 
   > div {
@@ -76,11 +89,11 @@ header {
         }
         a {
           display: block;
-          color: #fff;
+          color: $brand-primary;
           font-size: 22px;
           transition: padding 0.3s;
-          margin-top: 40px;
-          // border-bottom: 1px solid #fff;
+          margin: 20px 0;
+          font-size: xx-large;
         }
       }
 
@@ -92,7 +105,7 @@ header {
 }
 
 #mobile-menu {
-  margin-top: 0;
+  margin-top: 7px;
   width: 30px;
   height: 18px;
   position: relative;
@@ -151,28 +164,38 @@ header {
   }
 }
 
+.logo {
+  height: 50px;
+  margin-right: 30px;
+  @media (min-width: $lg-width) {
+    height: 80px;
+  }
+}
+
 .nav-desktop {
   display: none;
+  margin-top: 20px;
   @media (min-width: $lg-width) {
     display: block;
-    // float: right;
-    padding-bottom: 10px;
   }
+
   ul {
     list-style: none;
     margin: 12px 0px 0;
-
     li {
       display: inline;
       &:before {
         display: none;
       }
+
       a {
         display: inline-block;
-        margin-left: 30px;
-        color: white;
+        margin: 0 10px;
+        color: #9a9594;
         transition: padding 0.3s;
-        font-size: x-large;
+        @media (min-width: $lg-width) {
+          font-size: x-large;
+        }
       }
     }
   }
@@ -180,18 +203,7 @@ header {
   .sub-menu {
     display: none;
   }
+  .current-menu-item a {
+    color: red;
+  }
 }
-
-.col-12 {
-  margin: auto;
-  display: flex;
-  align-items: center;
-}
-
-a {
-  color: #fff;
-}
-
-// .logo {
-//   height: 50px;
-// }
