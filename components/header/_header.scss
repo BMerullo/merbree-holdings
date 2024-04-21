@@ -23,7 +23,7 @@
         }
       }
       .current-menu-item {
-        color: $brand-primary;
+        color: $brand-secondary;
       }
     }
   }
@@ -55,9 +55,17 @@ header {
 }
 
 .nav-mobile {
+  display: flex;
   float: right;
   @media (min-width: $lg-width) {
     display: none;
+  }
+  .logo-container {
+    display: flex;
+    margin-top: 7px;
+  }
+  .logo {
+    height: 40px;
   }
 }
 
@@ -68,7 +76,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(#343a40, 0.95);
+  background: rgba(black, 0.95);
   z-index: 97;
 
   > div {
@@ -89,7 +97,7 @@ header {
         }
         a {
           display: block;
-          color: $brand-primary;
+          color: $brand-secondary;
           font-size: 22px;
           transition: padding 0.3s;
           margin: 20px 0;
@@ -119,7 +127,7 @@ header {
     position: absolute;
     height: 3px;
     width: 100%;
-    background: $brand-primary;
+    background: $brand-secondary;
     border-radius: 0;
     opacity: 1;
     left: 0;
@@ -174,14 +182,22 @@ header {
 
 .nav-desktop {
   display: none;
-  margin-top: 20px;
+  margin-top: 15px;
+  .logo-container {
+    display: flex;
+  }
+  .brand-logo {
+    height: 50px;
+    margin-left: 20px;
+  }
   @media (min-width: $lg-width) {
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
 
   ul {
     list-style: none;
-    margin: 12px 0px 0;
+    margin-top: 8px;
     li {
       display: inline;
       &:before {
@@ -204,6 +220,6 @@ header {
     display: none;
   }
   .current-menu-item a {
-    color: red;
+    color: $brand-secondary;
   }
 }

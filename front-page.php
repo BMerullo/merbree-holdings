@@ -17,7 +17,9 @@ while ( have_posts() ) : the_post();
     endif;    
     if( get_row_layout() == 'hero_slider' ):
       $hero_slider = new StdClass;
-      $hero_slider->slides = get_sub_field('hero_slider');                   
+      $hero_slider->slides = get_sub_field('hero_slider');
+      $hero_slider->title = get_sub_field('hero_slider_title'); 
+      $hero_slider->text = get_sub_field('hero_slider_text');                 
       Components\View::render('hero-slider', 'hero-slider', $hero_slider);    
     endif;            
     endwhile;

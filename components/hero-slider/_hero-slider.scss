@@ -1,16 +1,47 @@
 .slider {
+  // position: relative;
   .slide {
-    height: 100vh;
-    // transition: opacity 8s ease-in-out;
+    transition: opacity 8s ease-in-out;
+    @media (min-width: $lg-width) {
+      height: 92vh;
+    }
   }
   .background {
+    @media (max-width: $sm-width) {
+      height: 25vh;
+    }
     width: 100%;
-    background: no-repeat center center fixed;
+    background: no-repeat center;
     // background-size: cover;
+  }
+}
+.title-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  background-color: #f2f2f3;
+  @media (min-width: $lg-width) {
+    height: 15vh;
+  }
+  .hero-text {
+    font-size: 30px;
+    font-weight: 400;
+    @media (min-width: $lg-width) {
+      font-size: 50px;
+    }
   }
 }
 
 .slick-slider .slick-slide {
   opacity: 0;
   transition: opacity 2s ease-in-out;
+}
+
+.text-container {
+  margin: auto;
+}
+
+.slider-text {
+  margin: auto;
 }
