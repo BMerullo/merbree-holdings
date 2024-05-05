@@ -4,8 +4,12 @@
 
 		<nav role="navigation" class="nav-desktop">
 			<div class="logo-container">
-				<img class="brand-logo" src="http://merbree-holdings.local/wp-content/uploads/2024/04/MOD-small.png" alt="MOD Pizza">
-				<img class="brand-logo" src="http://merbree-holdings.local/wp-content/uploads/2024/04/jerseymikes-small.png" alt="Jersey Mikes">
+				<a href="/#mod-link">
+					<img class="brand-logo" src="http://merbree-holdings.local/wp-content/uploads/2024/04/MOD-small.png" alt="MOD Pizza">
+				</a>
+				<a href="/#jersey-link">
+					<img class="brand-logo" src="http://merbree-holdings.local/wp-content/uploads/2024/04/jerseymikes-small.png" alt="Jersey Mikes">
+				</a>
 			</div>
 			<div>
 			<?php

@@ -5,24 +5,21 @@
 
 get_header();
 
-	while ( have_posts() ) : the_post(); ?>
+	while ( have_posts() ) : the_post(); 
+
+		if( have_rows('flex') ):
+		while ( have_rows('flex') ) : the_row();
+			if( get_row_layout() == 'hero' ):
+      $hero = new StdClass;
+      $hero->title = get_sub_field('hero_title');
+      $hero->background = get_sub_field('hero_background');                  
+      Components\View::render('hero', 'hero', $hero);
+    endif; 
+    endwhile;
+  endif;
 	
-		<?php
-		/**
-		 * This is an example of how to use the component system
-		 * Instead of StdClass, you can create your own classes to organize you structure
-		 * @var StdClass
-		 */
 		
-		// $object = new StdClass;
-		// $object->foo = 'bar';
-		
-		// Components\View::render('component-name', 'sub-component', $object);
-		
-		?>
 
-		<?php the_content(); ?>
-
-	<?php endwhile;
+  endwhile;
 
 get_footer(); ?>

@@ -21,12 +21,23 @@ while ( have_posts() ) : the_post();
       $hero_slider->title = get_sub_field('hero_slider_title'); 
       $hero_slider->text = get_sub_field('hero_slider_text');                 
       Components\View::render('hero-slider', 'hero-slider', $hero_slider);    
-    endif;            
+    endif; 
+    if( get_row_layout() == 'brands' ):
+      $brands = new StdClass;   
+      $brands->gallery = get_sub_field('brand_gallery'); 
+      $brands->text = get_sub_field('brand_text');
+      $brands->web = get_sub_field('brand_web_link');
+      $brands->location = get_sub_field('brand_location_link'); 
+      $brands->logo = get_sub_field('brand_logo'); 
+      $brands->class = get_sub_field('brand_class');
+      $brands->link = get_sub_field('brand_link');                
+      Components\View::render('brands', 'brands', $brands);    
+    endif; 
     endwhile;
   endif;
 
 
-    endwhile;
+  endwhile;
 
     
 

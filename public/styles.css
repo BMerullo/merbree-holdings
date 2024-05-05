@@ -13605,25 +13605,40 @@ ol li {
 * components
 ***/
 
+.page-hero .background-container {
+  width: 100%;
+  height: 90vh;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.page-hero .background-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .slider .slide {
+  background-size: cover;
+  height: 25%;
   transition: opacity 8s ease-in-out;
+}
+
+@media (min-width: 500px) {
+  .slider .slide {
+    height: 40vh;
+  }
 }
 
 @media (min-width: 992px) {
   .slider .slide {
-    height: 92vh;
+    height: 95vh;
   }
 }
 
 .slider .background {
   width: 100%;
   background: no-repeat center;
-}
-
-@media (max-width: 576px) {
-  .slider .background {
-    height: 25vh;
-  }
 }
 
 .title-container {
@@ -13917,7 +13932,7 @@ header {
   transition: padding 0.3s;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1300px) {
   .nav-desktop ul li a {
     font-size: x-large;
   }
@@ -13928,7 +13943,7 @@ header {
 }
 
 .nav-desktop .current-menu-item a {
-  color: #c4122f;
+  border-bottom: solid #c4122f 5px;
 }
 
 footer {
@@ -13939,6 +13954,7 @@ footer {
 @media (min-width: 992px) {
   footer {
     padding: 30px 100px;
+    margin-top: 70px;
   }
 }
 
@@ -13987,6 +14003,105 @@ footer .legal {
   margin-top: 20px;
   margin: auto;
   text-align: center;
+}
+
+.brands {
+  width: 90vw;
+  margin: auto;
+  padding-top: 50px;
+}
+
+@media (min-width: 992px) {
+  .brands {
+    width: 60%;
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 990px) {
+  .brands .none {
+    display: none;
+  }
+}
+
+.brands img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 5px;
+}
+
+.brands .logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.brands .logo {
+  width: 300px;
+}
+
+.brands .text-container {
+  border-top: #c4122f solid 5px;
+  text-align: center;
+  width: 80%;
+  padding-top: 30px;
+}
+
+@media (max-width: 576px) {
+  .brands .text-container {
+    width: 90%;
+    text-align: left;
+  }
+}
+
+.brands .text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.brands .link-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 40px 0;
+}
+
+@media (min-width: 992px) {
+  .brands .link-container {
+    justify-content: space-between;
+    width: 30vw;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .brands .link-container {
+    width: 80%;
+  }
+}
+
+.brands .brand-btn {
+  width: 150px;
+  background-color: #124a7b;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+@media (min-width: 992px) {
+  .brands .brand-btn {
+    width: 200px;
+  }
+}
+
+.brands #jersey-mikes-btn {
+  background-color: #124a7b;
+}
+
+.brands #mod-pizza-btn {
+  background-color: #ab1a2d;
 }
 
 

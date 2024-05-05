@@ -209,7 +209,7 @@ header {
         margin: 0 10px;
         color: #9a9594;
         transition: padding 0.3s;
-        @media (min-width: $lg-width) {
+        @media (min-width: 1300px) {
           font-size: x-large;
         }
       }
@@ -220,6 +220,7 @@ header {
     display: none;
   }
   .current-menu-item a {
-    color: $brand-secondary;
+    // color: $brand-secondary;
+    border-bottom: solid $brand-secondary 5px;
   }
 }

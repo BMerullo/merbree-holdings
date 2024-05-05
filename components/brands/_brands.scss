@@ -1,0 +1,75 @@
+.brands {
+  width: 90vw;
+  margin: auto;
+  padding-top: 50px;
+  @media (min-width: $lg-width) {
+    width: 60%;
+    padding-top: 100px;
+    // height: 100vh;
+  }
+  .none {
+    @media (max-width: 990px) {
+      display: none;
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 5px;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .logo {
+    width: 300px;
+  }
+  .text-container {
+    border-top: $brand-secondary solid 5px;
+    text-align: center;
+    width: 80%;
+
+    padding-top: 30px;
+    @media (max-width: $sm-width) {
+      width: 90%;
+      text-align: left;
+    }
+  }
+  .text {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .link-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 40px 0;
+
+    @media (min-width: $lg-width) {
+      justify-content: space-between;
+      width: 30vw;
+      padding-top: 60px;
+    }
+    @media (max-width: 1450px) {
+      width: 80%;
+    }
+  }
+  .brand-btn {
+    width: 150px;
+    background-color: #124a7b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    @media (min-width: $lg-width) {
+      width: 200px;
+    }
+  }
+  #jersey-mikes-btn {
+    background-color: #124a7b;
+  }
+  #mod-pizza-btn {
+    background-color: #ab1a2d;
+  }
+}

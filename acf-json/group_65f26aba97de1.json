@@ -80,6 +80,38 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6625561312024": {
+                    "key": "layout_6625561312024",
+                    "name": "brands",
+                    "label": "Brands",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6625561c12027",
+                            "label": "Brands",
+                            "name": "brands",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6625355370598"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -92,7 +124,7 @@
             {
                 "param": "page_type",
                 "operator": "==",
-                "value": "front_page"
+                "value": "top_level"
             }
         ]
     ],
@@ -105,5 +137,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1710985263
+    "modified": 1714706035
 }

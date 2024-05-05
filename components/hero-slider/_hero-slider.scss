@@ -1,14 +1,20 @@
 .slider {
   // position: relative;
   .slide {
+    background-size: cover;
+    height: 25%;
     transition: opacity 8s ease-in-out;
+    @media (min-width: 500px) {
+      height: 40vh;
+    }
     @media (min-width: $lg-width) {
-      height: 92vh;
+      height: 95vh;
     }
   }
+
   .background {
     @media (max-width: $sm-width) {
-      height: 25vh;
+      // height: 25vh;
     }
     width: 100%;
     background: no-repeat center;
