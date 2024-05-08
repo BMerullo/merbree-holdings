@@ -1,11 +1,10 @@
 .slider {
-  // position: relative;
   .slide {
     background-size: cover;
     height: 25%;
     transition: opacity 8s ease-in-out;
     @media (min-width: 500px) {
-      height: 40vh;
+      height: 80vh;
     }
     @media (min-width: $lg-width) {
       height: 95vh;
@@ -13,12 +12,12 @@
   }
 
   .background {
-    @media (max-width: $sm-width) {
-      // height: 25vh;
-    }
     width: 100%;
-    background: no-repeat center;
-    // background-size: cover;
+    @media (max-width: 500px) {
+      height: 219px;
+    }
+
+    background: no-repeat center inherit;
   }
 }
 .title-container {
@@ -27,6 +26,9 @@
   align-items: center;
   padding-top: 10px;
   background-color: #f2f2f3;
+  @media (max-width: 500px) {
+    display: none;
+  }
   @media (min-width: $lg-width) {
     height: 15vh;
   }

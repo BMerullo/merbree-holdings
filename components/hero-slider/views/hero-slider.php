@@ -1,10 +1,10 @@
 
-<?php $count = 0; ?>
+
 <?php $slides = $DATA->slides?>
 <?php $title = $DATA->title?>
 <?php $text = $DATA->text?>
 
-<section>
+<section class="hero-slider">
   <div class="slider">
     <?php foreach ($slides as $key => $slide): ?>
       <div class="slide">
@@ -17,6 +17,7 @@
     <div class="title-container">           
         <h2 class="hero-text"><?php echo $title?></h2>        
     </div>
+    
   
 </section>
 

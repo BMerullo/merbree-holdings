@@ -1,0 +1,21 @@
+.logo-link {
+  height: 50vh;
+  padding: 30px 20px;
+  background: linear-gradient(to bottom, #444, black);
+  border-top: solid 15px black;
+  @media (min-width: 500px) {
+    display: none;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo-container {
+    margin: 50px 0;
+  }
+  .logo-img {
+    height: 125px;
+  }
+}

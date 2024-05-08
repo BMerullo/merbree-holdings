@@ -112,6 +112,38 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_663accef35fb4": {
+                    "key": "layout_663accef35fb4",
+                    "name": "logo_link",
+                    "label": "Logo Link",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_663accfb35fb7",
+                            "label": "Logo Link",
+                            "name": "logo_link",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_663ac820d53ac"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -137,5 +169,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1714706035
+    "modified": 1715129627
 }
