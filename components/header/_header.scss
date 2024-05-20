@@ -205,6 +205,7 @@ header {
       }
 
       a {
+        font-weight: 600;
         display: inline-block;
         margin: 0 10px;
         color: #9a9594;
@@ -221,6 +222,6 @@ header {
   }
   .current-menu-item a {
     // color: $brand-secondary;
-    border-bottom: solid $brand-secondary 5px;
+    border-bottom: solid $brand-secondary 4px;
   }
 }

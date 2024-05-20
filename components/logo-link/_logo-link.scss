@@ -2,7 +2,7 @@
   height: 50vh;
   padding: 30px 20px;
   background: linear-gradient(to bottom, #444, black);
-  border-top: solid 15px black;
+  border-top: solid 25px black;
   @media (min-width: 500px) {
     display: none;
   }
@@ -16,6 +16,6 @@
     margin: 50px 0;
   }
   .logo-img {
-    height: 125px;
+    height: 110px;
   }
 }

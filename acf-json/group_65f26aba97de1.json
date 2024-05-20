@@ -144,6 +144,102 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_663c377ddeff7": {
+                    "key": "layout_663c377ddeff7",
+                    "name": "media_left",
+                    "label": "Media Left",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_663c3798deffa",
+                            "label": "Media Left",
+                            "name": "media_left",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_663c351b3547d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6644ffe3451a0": {
+                    "key": "layout_6644ffe3451a0",
+                    "name": "media_right",
+                    "label": "Media Right",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6644ffeb451a3",
+                            "label": "Media Right",
+                            "name": "media_right",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6644fd202cee0"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_66450bb5a5f63": {
+                    "key": "layout_66450bb5a5f63",
+                    "name": "team_profile",
+                    "label": "Team Profile",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_66450bc8a5f66",
+                            "label": "Team Profile",
+                            "name": "team_profile",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_66450b4771feb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -169,5 +265,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1715129627
+    "modified": 1715801055
 }
