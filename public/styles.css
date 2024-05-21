@@ -14303,5 +14303,11 @@ footer .legal {
   margin: 0px;
 }
 
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /*# sourceMappingURL=styles.css.map*/
