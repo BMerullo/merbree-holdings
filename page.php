@@ -45,6 +45,11 @@ get_header();
         $banner->text = get_sub_field('banner_text');
         Components\View::render('banner', 'banner', $banner);
       endif;
+      if(get_row_layout() == 'title'):
+        $title = new StdClass;
+        $title->title = get_sub_field('title');
+        Components\View::render('title', 'title', $title);
+      endif;
     endwhile;
       
   endif;

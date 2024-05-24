@@ -13775,7 +13775,7 @@ header {
 
 @media (min-width: 992px) {
   header {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     background-color: rgba(26, 25, 25, 0.8);
     -webkit-backdrop-filter: blur(15px);
@@ -13983,6 +13983,10 @@ header {
   .nav-desktop ul li a {
     font-size: x-large;
   }
+}
+
+.nav-desktop ul li a:hover {
+  border-bottom: solid #c4122f 4px;
 }
 
 .nav-desktop .sub-menu {
@@ -14304,9 +14308,35 @@ footer .legal {
 }
 
 .banner {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .banner-container {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+@media (min-width: 992px) {
+  .banner .banner-container .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main-title {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 

@@ -32,7 +32,7 @@
 header {
   // position: fixed;
   @media (min-width: $lg-width) {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     background-color: rgba(26, 25, 25, 0.8);
     backdrop-filter: blur(15px);
@@ -213,6 +213,9 @@ header {
         @media (min-width: 1300px) {
           font-size: x-large;
         }
+      }
+      a:hover {
+        border-bottom: solid $brand-secondary 4px;
       }
     }
   }

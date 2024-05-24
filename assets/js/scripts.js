@@ -43,6 +43,7 @@ jQuery(document).ready(function($) {
     fade: true,
     prevArrow: false,
     nextArrow: false,
-    autoplaySpeed: 4000
+    autoplaySpeed: 4000,
+    pauseOnHover: false
   });
 });
