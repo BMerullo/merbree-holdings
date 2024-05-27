@@ -6,17 +6,18 @@
   
 <section class="page-hero" >
   <div class="background-container">
-          <img src="<?php echo ($background)?>" alt="<?php echo $alt?>">
-          <div class=" hero-title">       
-            <?php         
+    
+      <img src="<?php echo ($background)?>" alt="<?php echo $alt?>">
+    
+    <div class="hero-title">       
+      <?php         
       $title = $DATA->title; 
-      if ($title) :?>
-        <h1 class="hero-text"><?php echo ($title)?></h1>
-        <?php else:?>
+        if ($title) :?>
+          <h1 class="hero-text"><?php echo ($title)?></h1>
+          <?php else:?>
           <p>no text</p>
-          <?php endif;?>
-        </div>  
-      </div>     
+          <?php endif;?>        
+    </div>     
   </div>
 </section>
     

@@ -30,6 +30,7 @@
 }
 
 header {
+  z-index: 4;
   // position: fixed;
   @media (min-width: $lg-width) {
     position: fixed;
@@ -55,6 +56,7 @@ header {
 }
 
 .nav-mobile {
+  z-index: 4;
   display: flex;
   float: right;
   @media (min-width: $lg-width) {
