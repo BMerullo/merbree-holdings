@@ -33,6 +33,11 @@ while ( have_posts() ) : the_post();
       $brands->link = get_sub_field('brand_link');                
       Components\View::render('brands', 'brands', $brands);    
     endif; 
+    if(get_row_layout() == 'title'):
+        $title = new StdClass;
+        $title->title = get_sub_field('title');
+        Components\View::render('title', 'title', $title);
+    endif;
     if(get_row_layout() == 'logo_link'):
         $logo_link = new StdClass;
         $logo_link->mod = get_sub_field('logo_link_mod');

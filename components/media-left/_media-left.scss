@@ -9,7 +9,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    @media (min-width: $lg-width) {
+      padding: 15px;
+    }
   }
   .row {
     .text-col {

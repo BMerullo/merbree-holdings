@@ -50,6 +50,11 @@ get_header();
         $title->title = get_sub_field('title');
         Components\View::render('title', 'title', $title);
       endif;
+      if(get_row_layout() == 'gallery'):
+        $gallery = new StdClass;
+        $gallery->gallery = get_sub_field('gallery');
+        Components\View::render('gallery', 'gallery', $gallery);
+      endif;
     endwhile;
       
   endif;

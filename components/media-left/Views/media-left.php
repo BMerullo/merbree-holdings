@@ -7,7 +7,7 @@
 
 <section class="media-left">
   <div class="row">
-    <div class="col-lg-7 anim-right anim-no-load">      
+    <div class="col-lg-7 anim-right">      
         <div class="flex">
           <h2><?php echo $title?></h2>
         </div>

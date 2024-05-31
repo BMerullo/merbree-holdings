@@ -1,13 +1,13 @@
 //(1) import font url
 
 //(2) create font variables
-$font: "Montserrat", sans-serif;
+$font: "Josefin Sans", sans-serif;
 
 //(3) add to elements
 
 h1 {
   font-family: $font;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 38px;
   line-height: 1.1;
   @media (min-width: $md-width) {

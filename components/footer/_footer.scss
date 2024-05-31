@@ -1,6 +1,8 @@
 footer {
+  width: 90%;
   border-top: 1px solid $gray;
   padding: 20px 0px 10px 0px;
+  margin: auto;
   @media (min-width: $lg-width) {
     padding: 30px 100px;
     margin-top: 70px;
@@ -23,10 +25,10 @@ footer {
   }
   ul {
     list-style: none;
+    text-align: center;
     @media (min-width: $lg-width) {
       text-align: right;
       margin-bottom: 30px;
-      padding-left: 0px;
     }
     margin-top: 30px;
     li {

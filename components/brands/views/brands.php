@@ -21,7 +21,7 @@
 
 <section class="brands" id="<?php echo $link;?>">
 
-  <div class="row gallery">   
+  <div class="row">   
     <div class="col-lg-4 none img">
       <img src="<?php echo $img1?>" alt="Sandwich">
     </div>

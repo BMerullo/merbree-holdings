@@ -1,0 +1,34 @@
+.gallery {
+  width: 90%;
+  display: none;
+  @media (min-width: $lg-width) {
+    display: grid;
+    margin: auto;
+    padding: 50px 0;
+    width: 60%;
+  }
+  .gallery-container {
+    margin: auto;
+    padding: 60px;
+  }
+  .gallery-img-container {
+    height: 200px;
+    width: 300px;
+    margin: auto;
+
+    @media (min-width: $lg-width) {
+      margin-bottom: 30px;
+      height: 250px;
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+
+    @media (min-width: $lg-width) {
+      margin-right: 5px;
+    }
+  }
+}
