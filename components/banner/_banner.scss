@@ -3,6 +3,7 @@
   background-position: center;
   position: relative;
   overflow: hidden;
+  margin-top: 50px;
   // margin-top: 100px;
   .banner-container {
     background: rgba(0, 0, 0, 0.7);
@@ -29,6 +30,24 @@
     }
     .banner-text {
       text-align: center;
+    }
+    .banner-btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .banner-btn {
+      width: 150px;
+      background-color: #124a7b;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 8px;
+      @media (min-width: $lg-width) {
+        width: 200px;
+      }
+    }
+    .no-link {
+      display: none;
     }
   }
 }

@@ -43,6 +43,7 @@ get_header();
         $banner->title = get_sub_field('banner_title');
         $banner->image = get_sub_field('banner_image');
         $banner->text = get_sub_field('banner_text');
+        $banner->link = get_sub_field('banner_link');
         Components\View::render('banner', 'banner', $banner);
       endif;
       if(get_row_layout() == 'title'):

@@ -13644,7 +13644,7 @@ ol li {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
   display: flex;
   justify-content: center;
@@ -13698,7 +13698,7 @@ ol li {
   justify-content: space-around;
   align-items: center;
   padding-top: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 992px) {
@@ -14219,6 +14219,7 @@ footer .legal {
 .media-left {
   margin: auto;
   width: 90%;
+  padding-top: 50px;
 }
 
 @media (min-width: 992px) {
@@ -14253,7 +14254,7 @@ footer .legal {
 .media-right {
   margin: auto;
   width: 90%;
-  padding: 50px 0;
+  padding-top: 50px;
 }
 
 @media (min-width: 992px) {
@@ -14306,9 +14307,6 @@ footer .legal {
 }
 
 .team-profile .text {
-  background-color: #f2f2f3;
-  border: solid black 1px;
-  border-radius: 1rem;
   padding: 0 25px;
 }
 
@@ -14356,6 +14354,7 @@ footer .legal {
   background-position: center;
   position: relative;
   overflow: hidden;
+  margin-top: 50px;
 }
 
 .banner .banner-container {
@@ -14392,11 +14391,35 @@ footer .legal {
   text-align: center;
 }
 
+.banner .banner-container .banner-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .banner-container .banner-btn {
+  width: 150px;
+  background-color: #124a7b;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+@media (min-width: 992px) {
+  .banner .banner-container .banner-btn {
+    width: 200px;
+  }
+}
+
+.banner .banner-container .no-link {
+  display: none;
+}
+
 .main-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin: 50px;
 }
 
 .gallery {
