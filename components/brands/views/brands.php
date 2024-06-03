@@ -32,13 +32,13 @@
       <img src="<?php echo $img3?>" alt="Sandwich">
     </div>
   </div>
-  <div class="logo-container">
-    <img class="logo" src="<?php echo $logo?>" alt="logo">
+  <div class="logo-container anim-left anim-no-load">
+    <img class="brand-logo" src="<?php echo $logo?>" alt="logo">
   </div>
   <div class="text-container">
     <p class="text"><?php echo $text?></p>
   </div>
-  <div class="link-container">
+  <div class="link-container anim-up anim-no-load">
     <a href="<?php echo $link1?>"><button class="brand-btn" id="<?php echo $class;?>"><?php echo $title1?></button></a>
     <a href="<?php echo $link2?>"><button class="brand-btn" id="<?php echo $class;?>"><?php echo $title2?></button></a>
     
