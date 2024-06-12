@@ -23,7 +23,7 @@
       if ( $DATA->link):?>
       <div class="col-lg-2 anim-right anim-no-load banner-btn-container">
         <a href="<?php echo $DATA->link['url']?>">
-          <button class="banner-btn">Learn More</button>
+          <button class="banner-btn"><?php echo $DATA->link['title']?></button>
         </a>
       </div>
       <?php else:?>
@@ -33,3 +33,4 @@
     </div>
   </div>
 </section>
+
