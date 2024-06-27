@@ -9,19 +9,29 @@
     <div class="row flex">
       <?php
       if($DATA->image):?>
-      <div class="col-lg-2 banner-img anim-right anim-no-load">
+      <div class="col-lg-2 banner-img anim-up anim-no-load">
         <img src="<?php echo $DATA->image['url'] ?>" alt="<?php echo $DATA->image['alt']?>">
       </div>
       <?php else:?>
         <p class="no-link">no link</p>
-      <?php endif;?>
-      <div class="col-lg-5 anim-left anim-no-load">
+      <?php endif;?>  
+      <div class="col-lg-5 anim-up anim-no-load">
+        <?php
+        if ( $DATA->title):?>
         <h4 class="banner-text"><?php echo $title?></h4>
+        <?php else:?>
+          <p class="no-link">no link</p>
+        <?php endif;?>
+        <?php
+        if ( $DATA->text):?>
         <p class="banner-text"><?php echo $text?></p>  
+        <?php else:?>
+          <p class="no-link">no link</p>
+        <?php endif;?>
       </div>
-      <?php    
+      <?php         
       if ( $DATA->link):?>
-      <div class="col-lg-2 anim-right anim-no-load banner-btn-container">
+      <div class="col-lg-2 anim-up anim-no-load banner-btn-container">
         <a href="<?php echo $DATA->link['url']?>">
           <button class="banner-btn"><?php echo $DATA->link['title']?></button>
         </a>

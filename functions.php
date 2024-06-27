@@ -41,3 +41,45 @@ function df_disable_comments_post_types_support() {
       }
    }
 }
+
+// CONTACT FORM 7
+
+// function create_form7_post_type() {
+//    register_post_type('form7',
+//       array(
+//             'labels'      => array(
+//                'name'          => __('Form7s'),
+//                'singular_name' => __('Form7'),
+//             ),
+//             'public'      => true,
+//             'has_archive' => true,
+//             'supports'    => array('title', 'editor'),
+//       )
+//    );
+// }
+// add_action('init', 'create_form7_post_type');
+
+// function my_acf_save_post($post_id) {
+//     // Check if the post is of type 'form7'
+//    if (get_post_type($post_id) == 'form7') {
+//         // Get form field values
+//       $name = get_field('name', $post_id);
+//       $email = get_field('email', $post_id);
+//       $message = get_field('message', $post_id);
+
+//         // Email details
+//       $to = 'bmerullo85@gmail.com';
+//       $subject = 'New Form Submission';
+//       $headers = array('Content-Type: text/html; charset=UTF-8');
+
+//         // Compose email message
+//       $body = '<h2>New Form Submission</h2>';
+//       $body .= '<p><strong>Name:</strong> ' . $name . '</p>';
+//       $body .= '<p><strong>Email:</strong> ' . $email . '</p>';
+//       $body .= '<p><strong>Message:</strong><br />' . nl2br($message) . '</p>';
+
+//         // Send email
+//       wp_mail($to, $subject, $body, $headers);
+//    }
+// }
+// add_action('acf/save_post', 'my_acf_save_post', 20);

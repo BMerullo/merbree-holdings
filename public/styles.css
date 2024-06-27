@@ -14401,6 +14401,7 @@ footer .legal {
   width: 150px;
   background-color: #124a7b;
   color: white;
+  margin: 50px 0;
   padding: 5px 10px;
   border-radius: 8px;
 }
@@ -14431,7 +14432,7 @@ footer .legal {
   .gallery {
     display: grid;
     margin: auto;
-    padding: 50px 0;
+    padding-top: 50px;
     width: 60%;
   }
 }
@@ -14465,6 +14466,26 @@ footer .legal {
 @media (min-width: 992px) {
   .gallery img {
     margin-right: 5px;
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+@media (min-width: 992px) {
+  .form .form-container {
+    padding-top: 225px;
+    padding-bottom: 400px;
   }
 }
 

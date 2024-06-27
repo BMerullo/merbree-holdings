@@ -56,6 +56,11 @@ get_header();
         $gallery->gallery = get_sub_field('gallery');
         Components\View::render('gallery', 'gallery', $gallery);
       endif;
+      if(get_row_layout()== 'form'):
+        $form = new StdClass;
+        $form->data = get_sub_field('form_data');
+        Components\View::render('form', 'form', $form);
+      endif;
     endwhile;
       
   endif;

@@ -1,0 +1,15 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    @media (min-width: $lg-width) {
+      padding-top: 225px;
+      padding-bottom: 400px;
+    }
+  }
+}
