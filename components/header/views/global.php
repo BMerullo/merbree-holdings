@@ -1,3 +1,9 @@
+<?php 
+$image_id = 80;
+$image_url = wp_get_attachment_url($image_id);
+?>
+
+
 <header>
 	<?php if ( has_nav_menu( 'utility' )) : ?>
 
@@ -19,9 +25,9 @@
 			<div class="col-12 clearfix">
 				
 				<div class="branding">
-
-					<h1 class="title logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logo" src="http://merbree-holdings.local/wp-content/uploads/2024/04/merbreelogo-transparent.png" alt="logo"></a></h1>
-
+				<?php if ($image_url) : ?>
+					<h1 class="title logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logo" src="<?php echo esc_url( $image_url ); ?>" alt="logo"></a></h1>
+				<?php endif;?>
 				</div>
 
 				<?php Components\View::render( 'header', 'navigation' ); ?>

@@ -4,6 +4,9 @@
 <?php $text = $DATA->text?>
 
 
+
+
+
 <section class="banner " style="background-image:url(<?php echo $background ?>)">
   <div class="banner-container">
     <div class="row flex">

@@ -1,14 +1,23 @@
-
+<?php 
+$mod_logo_id = 91;
+$mod_logo_url = wp_get_attachment_url($mod_logo_id);
+$jm_logo_id = 90;
+$jm_logo_url = wp_get_attachment_url($jm_logo_id);
+?>
 
 <?php if ( has_nav_menu( 'primary' )) : ?>
 
 		<nav role="navigation" class="nav-desktop">
 			<div class="logo-container">
 				<a href="/#mod-link">
-					<img class="brand-logo" src="http://merbree-holdings.local/wp-content/uploads/2024/04/MOD-small.png" alt="MOD Pizza">
+				<?php if ($mod_logo_url) : ?>
+					<img class="brand-logo" src="<?php echo esc_url( $mod_logo_url ); ?>" alt="MOD Pizza">
+				<?php endif;?>
 				</a>
 				<a href="/#jersey-link">
-					<img class="brand-logo" src="http://merbree-holdings.local/wp-content/uploads/2024/04/jerseymikes-small.png" alt="Jersey Mikes">
+				<?php if ($jm_logo_url) : ?>
+					<img class="brand-logo" src="<?php echo esc_url( $jm_logo_url ); ?>" alt="Jersey Mikes">
+				<?php endif ?>
 				</a>
 			</div>
 			<div>
